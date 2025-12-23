@@ -1,4 +1,4 @@
-# Tugas-Besar-Algoritma-Pemrograman-SOFTBOY-
+# Tugas-Besar-Algoritma-Pemrograman -SOFTBOY-
 
 #  <p align="center">Mini Arcade SOFTBOY </p>
 
