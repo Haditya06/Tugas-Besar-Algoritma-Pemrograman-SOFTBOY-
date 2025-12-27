@@ -65,10 +65,11 @@ ArrayList<user> users = new ArrayList<>();
 Contoh penyimpanan data:
 ```java
 leaderboard.add(new leaderboardTebakangka(userLogin, jumlahTebakan));
-📌 Leaderboard ini bersifat history permainan, bukan hanya skor terbaik.
+```
+## 📌 Leaderboard ini bersifat history permainan, bukan hanya skor terbaik.
 
-❌⭕ Game 2: Tic Tac Toe
-📖 Cara Bermain
+## ❌⭕ Game 2: Tic Tac Toe
+### 📖 Cara Bermain
 User bermain melawan bot
 
 User menggunakan simbol X
@@ -77,7 +78,7 @@ Bot menggunakan simbol O
 
 Bot bergerak secara random
 
-📊 Leaderboard Tic Tac Toe
+## 📊 Leaderboard Tic Tac Toe
 Menyimpan total menang dan kalah
 
 Setiap user hanya memiliki satu data
@@ -85,14 +86,14 @@ Setiap user hanya memiliki satu data
 Jika user bermain lagi, data akan diperbarui
 
 Logika leaderboard:
-
-java
-Salin kode
+```
 void dataleaderboardTictakto(String username, boolean menang)
-📌 Jika user sudah ada → update skor
-📌 Jika user belum ada → buat data baru
+```
 
-📊 Tampilan Leaderboard
+- 📌 Jika user sudah ada → update skor
+- 📌 Jika user belum ada → buat data baru
+
+### 📊 Tampilan Leaderboard
 Leaderboard ditampilkan berdasarkan:
 
 Tebak Angka → jumlah tebakan
@@ -100,38 +101,30 @@ Tebak Angka → jumlah tebakan
 Tic Tac Toe → total menang & kalah
 
 Contoh output:
-
-yaml
-Salin kode
+```
 1. haditya | Menang: 2 | Kalah: 1
-▶️ Cara Menjalankan Program
+```
+
+## ▶️ Cara Menjalankan Program
 Pastikan Java sudah terinstall
-
 Compile program:
-
-bash
-Salin kode
+```
 javac tesLogin.java
+```
 Jalankan program:
-
-bash
-Salin kode
+```
 java tesLogin
-📚 Tujuan Pembuatan
-Program ini dibuat untuk:
+```
+## 📚 Tujuan Pembuatan
+- Program ini dibuat untuk:
+- Memahami konsep dasar Java
+- Menerapkan OOP secara sederhana
+- Melatih penggunaan ArrayList dan method
+- Membuat aplikasi console yang interaktif
 
-Memahami konsep dasar Java
-
-Menerapkan OOP secara sederhana
-
-Melatih penggunaan ArrayList dan method
-
-Membuat aplikasi console yang interaktif
-
-👨‍💻 Author
+### 👨‍💻 Author
+```
 Nama: Haditya
-
 Bahasa: Java
-
 Tipe Aplikasi: Console Application
- 
+ ```
