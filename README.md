@@ -1,9 +1,6 @@
-# Tugas-Besar-Algoritma-Pemrograman -SOFTBOY-
-
 #  <p align="center">🎮 Mini Arcade SOFTBOY</p>
 
-**Tugas Besar Algoritma & Pemrograman**
-
+**Tugas-Besar-Algoritma-Pemrograman -SOFTBOY-**
 <p align="center">
   <b>ARCADE MINI SOFTBOY (Java Console)</b>
 </p>
