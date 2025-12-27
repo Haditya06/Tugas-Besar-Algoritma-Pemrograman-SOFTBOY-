@@ -1,8 +1,7 @@
 # Tugas-Besar-Algoritma-Pemrograman -SOFTBOY-
 
-#  <p align="center">Mini Arcade SOFTBOY </p>
+#  <p align="center">🎮 Mini Arcade SOFTBOY</p>
 
-# 🎮 Mini Arcade SOFTBOY  
 **Tugas Besar Algoritma & Pemrograman**
 
 <p align="center">
