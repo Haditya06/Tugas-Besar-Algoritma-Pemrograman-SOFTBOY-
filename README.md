@@ -10,7 +10,6 @@
 ## 📌 Deskripsi Program
 
 **Mini Arcade SOFTBOY** adalah aplikasi game berbasis **Java Console** yang berisi beberapa mini game dengan fitur **login, registrasi, dan leaderboard**.
-
 Program ini dibuat sebagai **Tugas Besar Algoritma dan Pemrograman** untuk melatih pemahaman konsep dasar **Java** dan **Object Oriented Programming (OOP)**.
 
 ---
@@ -66,7 +65,6 @@ Contoh penyimpanan data:
 ```java
 leaderboard.add(new leaderboardTebakangka(userLogin, jumlahTebakan));
 ```
-## 📌 Leaderboard ini bersifat history permainan, bukan hanya skor terbaik.
 
 ## ❌⭕ Game 2: Tic Tac Toe
 ### 📖 Cara Bermain
