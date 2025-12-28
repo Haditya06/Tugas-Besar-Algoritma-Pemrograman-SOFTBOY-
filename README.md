@@ -44,8 +44,7 @@ User dapat:
 - Login ke sistem
 - Bermain game menggunakan akun yang sedang login
 
-Data user disimpan menggunakan `ArrayList`:
-
+Data user disimpan menggunakan struktur data `ArrayList` agar dapat menampung banyak akun:
 ```java
 ArrayList<user> users = new ArrayList<>();
 ```
@@ -68,20 +67,15 @@ leaderboard.add(new leaderboardTebakangka(userLogin, jumlahTebakan));
 
 ## ❌⭕ Game 2: Tic Tac Toe
 ### 📖 Cara Bermain
-User bermain melawan bot
-
-User menggunakan simbol X
-
-Bot menggunakan simbol O
-
-Bot bergerak secara random
+- User bermain melawan bot
+- User menggunakan simbol X
+- Bot menggunakan simbol O
+- Bot bergerak secara random
 
 ## 📊 Leaderboard Tic Tac Toe
-Menyimpan total menang dan kalah
-
-Setiap user hanya memiliki satu data
-
-Jika user bermain lagi, data akan diperbarui
+- Menyimpan total menang dan kalah
+- Setiap user hanya memiliki satu data
+- Jika user bermain lagi, data akan diperbarui
 
 Logika leaderboard:
 ```
