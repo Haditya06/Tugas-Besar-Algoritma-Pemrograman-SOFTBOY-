@@ -12,7 +12,7 @@ Program ini dibuat sebagai **Tugas Besar Algoritma dan Pemrograman** untuk melat
 ## 🧩 Fitur Program
 - 🔐 Login & Registrasi User  
 - 🎲 Game Tebak Angka (1–100)
-- ❌⭕ Game Tic Tac Toe (vs Bot)  
+- ❌⭕ Game Tic Tac Toe (vs Bot)
 - 📊 Leaderboard untuk setiap game  
 - 👤 Sistem user aktif (login session)
 
