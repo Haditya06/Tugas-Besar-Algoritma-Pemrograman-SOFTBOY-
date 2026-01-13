@@ -1,116 +1,110 @@
-# <p align="center">🎮 Mini Arcade SOFTBOY</p>
+# 🎮 Mini Arcade SOFTBOY
 
-**Tugas-Besar-Algoritma-Pemrograman -SOFTBOY-**
----
-## 📌 Deskripsi Program
-
-**Mini Arcade SOFTBOY** adalah aplikasi game berbasis **Java Console** yang berisi beberapa mini game dengan fitur **login, registrasi, dan leaderboard**.
-Program ini dibuat sebagai **Tugas Besar Algoritma dan Pemrograman** untuk melatih pemahaman konsep dasar **Java** dan **Object Oriented Programming (OOP)**.
+Mini Arcade SOFTBOY adalah aplikasi game berbasis Java Console yang berisi beberapa mini-game lengkap dengan sistem registrasi/login dan leaderboard. Proyek ini dibuat sebagai Tugas Besar Mata Kuliah Algoritma dan Pemrograman untuk memperkuat pemahaman konsep Java dan OOP.
 
 ---
 
-## 🧩 Fitur Program
-- 🔐 Login & Registrasi User  
-- 🎲 Game Tebak Angka (1–100)
-- ❌⭕ Game Tic Tac Toe (vs Bot)
-- 📊 Leaderboard untuk setiap game  
-- 👤 Sistem user aktif (login session)
+## 🔎 Ringkasan
+- Bahasa: Java (Console)
+- Fitur utama: Registrasi & Login, Tebak Angka (1–100), Tic Tac Toe vs Bot, Leaderboard, Session user aktif
+- Tujuan: Latihan OOP, ArrayList, struktur data sederhana, dan I/O dasar
 
 ---
 
-## 🛠️ Konsep yang Digunakan
-
-Program ini menerapkan konsep dasar Java, antara lain:
-
-- Class & Object (OOP)
-- Array & ArrayList
-- Method
-- Percabangan (`if`, `switch`)
-- Perulangan (`for`, `while`)
-- Input & Output menggunakan `Scanner`
+## ✨ Fitur
+- Sistem user: registrasi, login, logout
+- Game Tebak Angka (1–100) — hitung jumlah tebakan
+- Game Tic Tac Toe melawan bot sederhana (gerakan bot acak)
+- Leaderboard terpisah untuk setiap game
+  - Tebak Angka: diurutkan berdasarkan jumlah tebakan (semakin sedikit semakin baik)
+  - Tic Tac Toe: menyimpan total menang & kalah per user
+- Session login: bermain dengan akun yang sedang aktif
 
 ---
 
-## 👤 Sistem User
+## 🔧 Persyaratan
+- Java Development Kit (JDK) terinstal (Java 8 atau lebih baru)
+- Terminal / Command Prompt
 
-User dapat:
-- Melakukan registrasi akun
-- Login ke sistem
-- Bermain game menggunakan akun yang sedang login
+---
 
-Data user disimpan menggunakan struktur data `ArrayList` agar dapat menampung banyak akun:
-```java
-ArrayList<user> users = new ArrayList<>();
+## 🚀 Cara Menjalankan
+Buka terminal di folder proyek lalu kompilasi semua file Java:
+```bash
+javac *.java
 ```
-## 🎲 Game 1: Tebak Angka (1–100)
-
-### 📖 Cara Bermain
-- Sistem akan menghasilkan angka acak antara **1–100**
-- User menebak angka sampai tebakan benar
-- Sistem menghitung jumlah tebakan user
-
-### 📊 Leaderboard Tebak Angka
-- Menyimpan riwayat setiap permainan
-- Satu user dapat muncul lebih dari satu kali
-- Data disimpan berdasarkan jumlah tebakan
-
-Contoh penyimpanan data:
-```java
-leaderboard.add(new leaderboardTebakangka(userLogin, jumlahTebakan));
-```
-
-## ❌⭕ Game 2: Tic Tac Toe
-### 📖 Cara Bermain
-- User bermain melawan bot
-- User menggunakan simbol X
-- Bot menggunakan simbol O
-- Bot bergerak secara random
-
-## 📊 Leaderboard Tic Tac Toe
-- Menyimpan total menang dan kalah
-- Setiap user hanya memiliki satu data
-- Jika user bermain lagi, data akan diperbarui
-
-Logika leaderboard:
-```
-void dataleaderboardTictakto(String username, boolean menang)
-```
-
-- 📌 Jika user sudah ada → update skor
-- 📌 Jika user belum ada → buat data baru
-
-### 📊 Tampilan Leaderboard
-Leaderboard ditampilkan berdasarkan:
-
-Tebak Angka → jumlah tebakan
-
-Tic Tac Toe → total menang & kalah
-
-Contoh output:
-```
-1. haditya | Menang: 2 | Kalah: 1
-```
-
-## ▶️ Cara Menjalankan Program
-Pastikan Java sudah terinstall
-Compile program:
-```
-javac tesLogin.java
-```
-Jalankan program:
-```
+Jalankan program utama (contoh nama kelas utama: `tesLogin`):
+```bash
 java tesLogin
 ```
-## 📚 Tujuan Pembuatan
-- Program ini dibuat untuk:
-- Memahami konsep dasar Java
-- Menerapkan OOP secara sederhana
-- Melatih penggunaan ArrayList dan method
-- Membuat aplikasi console yang interaktif
+Catatan: Jika kelas utama berbeda, sesuaikan perintah `java`.
 
-### 👨‍💻 Author
-```
-Nama: Haditya
-Bahasa: Java
+---
+
+## 🕹 Cara Bermain — Ringkasan
+1. Registrasi (jika belum punya akun)
+2. Login menggunakan username yang terdaftar
+3. Pilih game dari menu:
+   - Tebak Angka:
+     - Sistem memilih angka acak 1–100
+     - Tebak sampai benar; sistem menghitung jumlah tebakan
+     - Hasil disimpan di leaderboard
+   - Tic Tac Toe:
+     - User = X, Bot = O
+     - Bot melakukan langkah acak
+     - Setelah permainan, hasil menang/kalah akan memperbarui leaderboard
+
+---
+
+## 📊 Detail Leaderboard
+- Tebak Angka:
+  - Menyimpan setiap sesi permainan sebagai entri terpisah:
+    ```java
+    leaderboard.add(new leaderboardTebakangka(userLogin, jumlahTebakan));
+    ```
+  - Diurutkan berdasarkan `jumlahTebakan` (ascending)
+- Tic Tac Toe:
+  - Menyimpan rekap per user (satu data per user). Jika user bermain lagi, data di-update:
+    ```java
+    void dataleaderboardTictakto(String username, boolean menang)
+    ```
+  - Format tampilan:
+    ```
+    1. haditya | Menang: 2 | Kalah: 1
+    ```
+
+---
+
+## 🧠 Struktur Konsep yang Digunakan
+- Object Oriented Programming (Class & Object)
+- Koleksi: `ArrayList` untuk menyimpan user dan leaderboard
+- Kontrol alur: `if`, `switch`
+- Perulangan: `for`, `while`
+- Input: `Scanner`
+- Randomization: `Random` untuk angka tebak dan langkah bot Tic Tac Toe
+
+---
+
+## ✅ Saran Pengembangan Berikutnya (opsional)
+- Simpan data ke file (serialized/CSV/JSON) agar leaderboard persist setelah program ditutup
+- Tingkatkan AI bot Tic Tac Toe (minimax)
+- Tambah lebih banyak mini-games
+- Antarmuka grafis sederhana (Swing/JavaFX) untuk pengalaman lebih baik
+---
+
+## 🛠 Kontribusi
+Kontribusi, saran, atau laporan bug sangat diterima. Silakan buka issue atau kirim pull request di repository ini.
+
+---
+
+## 👨‍💻 Author
+Nama: Haditya  
+Bahasa: Java  
 Tipe Aplikasi: Console Application
- ```
+
+---
+
+Terima kasih telah melihat proyek ini — semoga membantu belajar Java dan OOP! Jika ingin, saya bisa bantu:
+- Menulis contoh file penyimpanan leaderboard ke file (CSV/JSON)
+- Membuat README versi bahasa Inggris
+- Menambahkan instruksi compile/run yang lebih spesifik sesuai struktur proyek
