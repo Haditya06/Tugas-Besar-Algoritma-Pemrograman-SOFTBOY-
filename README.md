@@ -1,5 +1,5 @@
 # 🎮 Mini Arcade SOFTBOY
-
+ 
 Mini Arcade SOFTBOY adalah aplikasi game berbasis Java Console yang berisi beberapa mini-game lengkap dengan sistem registrasi/login dan leaderboard. Proyek ini dibuat sebagai Tugas Besar Mata Kuliah Algoritma dan Pemrograman untuk memperkuat pemahaman konsep Java dan OOP.
 
 ---
