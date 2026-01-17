@@ -3,7 +3,7 @@
 Mini Arcade SOFTBOY adalah aplikasi game berbasis Java Console yang berisi beberapa mini-game lengkap dengan sistem registrasi/login dan leaderboard. Proyek ini dibuat sebagai Tugas Besar Mata Kuliah Algoritma dan Pemrograman untuk memperkuat pemahaman konsep Java dan OOP.
 
 ---
- 
+
 ## 🔎 Ringkasan
 - Bahasa: Java (Console)
 - Fitur utama: Registrasi & Login, Tebak Angka (1–100), Tic Tac Toe vs Bot, Leaderboard, Session user aktif
